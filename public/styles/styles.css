@@ -8,9 +8,17 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   overflow-x: hidden;
+  background-color: #444444;
+}
+h1,h2,h3,h4,h5,h6, p {
+  color: #fff;
+}
+.p {
+  color: #fff;
 }
 .btn-xl {
   padding: 20px 40px;
+  color: #212529;
 }
 .content-section {
   padding-top: 100px;
@@ -32,8 +40,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* Side Menu */
 .logo {
-	position: absolute;
-	z-index: 99;
+	position: fixed;
+	z-index: 99999;
 	left: 50px;
 	top: 20px;
 }
@@ -168,7 +176,7 @@ span {
 	
 }
 #Services {
-  background-color: #fafafa;
+  background-color: #444444;
 }
 #Services .service-box {
   position: relative;
@@ -359,7 +367,7 @@ span {
 }
 #Testimonials.content-section {
   padding-bottom: 0;
-  background-color: #fafafa;
+  background-color: #444444;
 }
 #customers-testimonials .shadow-effect p {
   font-family: inherit;
@@ -367,17 +375,17 @@ span {
   line-height: 1.5;
   margin: 0 0 17px 0;
   font-weight: 300;
+  color: #212529;
 }
 #customers-testimonials .testimonial-name {
   margin: -17px auto 0;
   display: table;
   width: auto;
-  background-color: #02ccba;
-  color: #fff;
+  background-color: #02ccba;  
   padding: 9px 35px;
   border-radius: 12px;
   text-align: center;
-  color: #fff;
+  color: #212529;
 }
 #customers-testimonials .item {
   text-align: center;
@@ -552,7 +560,7 @@ span {
 footer.footer {
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: #fafafa;
+  background-color: #444444;
 }
 footer.footer .social-link {
   display: block;
@@ -567,12 +575,19 @@ footer.footer .social-link {
 footer.footer .social-link:hover {
 	background-color: #07bcab;
 }
+footer.footer p {
+  /* Ensure paragraph text in footer is readable on light background */
+  color: #fff;
+  font-weight: 200;
+  /* Bootstrap's default gray, suitable for footer text on light background */
+}
 footer.footer p.small a {
-	color: #636c72;
+  color: #6c757d;
+  font-weight: 200;
 	text-decoration: none;
 }
 footer.footer p.small a:hover, footer.footer p.small a.focus {
-	color: #02ccba;
+  color: #fff;
 	text-decoration: none;
 }
 #Contact .address-block span {

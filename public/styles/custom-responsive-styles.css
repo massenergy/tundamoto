@@ -168,5 +168,22 @@
     margin-right: 10px;
   }
 }
+
+/* For medium screens (md) and larger (>= 768px) */
+@media (min-width: 768px) {
+  .about-us-image {
+    display: inline-block;   
+    vertical-align: middle;    
+  }
+}
+
+/* For large screens (lg) and larger (>= 992px) */
+@media (min-width: 992px) {
+  .about-us-image {
+    max-width: 1000px;    
+    max-height: 10000px;
+    
+  }
+}
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {}
