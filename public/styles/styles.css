@@ -20,6 +20,14 @@ h1,h2,h3,h4,h5,h6, p {
   padding: 20px 40px;
   color: #212529;
 }
+
+/* General primary button style override - Pitch Deck*/
+
+.btn.btn-primary:hover {
+  background-color: #ff8f00; /* Hover background (Warmer tone from the yellow/amber) */
+  color: #fff; /* Ensure text color remains white on hover */
+  border: none; /* Ensure border remains none on hover */
+}
 .content-section {
   padding-top: 100px;
   padding-bottom: 100px;
