@@ -151,9 +151,21 @@ span {
 #Banner {
   position: relative;
   height: 100vh;
-  background: linear-gradient(274deg, #673ab7, #3f51b5 44%, #00bcd4);
+  background: linear-gradient(274deg, #00bcd4, #201e1d 44%, #1e1c1b);
   color: #fff;
 }
+.image-13 {
+  /* This is the key part for blending */
+  box-shadow: 0 0 3px 2px #201e1d;
+  /* Adjust blur (3px) and spread (2px) as needed */
+
+  /* Also ensure no other borders are interfering */
+  border: none;
+  outline: none;
+  display: block;
+  /* Can sometimes help with rendering consistency */
+}
+
 #Banner .content-wrap {
   position: absolute;
   top: 50%;
